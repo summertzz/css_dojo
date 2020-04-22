@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>首页</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+
+        background: #fff;
+      }
+      h1 {
+        text-align: center;
+      }
+      .nav {
+        position: relative;
+        left: -180px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: stretch;
+
+        min-height: 80vh;
+        width: 180px;
+
+        background: #eee;
+        border-radius: 0 0 10px 0;
+
+        transition: 0.4s;
+      }
+      .nav::after {
+        position: absolute;
+        top: 0px;
+        right: -30px;
+
+        width: 60px;
+        height: 100px;
+
+        content: '目录';
+
+        border-radius: 0 8px 8px 0;
+        background: #eee;
+
+        font-family: '宋体';
+        font-size: 22px;
+        text-align: center;
+        line-height: 50px;
+        color: orange;
+      }
+      .nav:hover {
+        left: 0;
+      }
+      .nav-item {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        height: 40px;
+      }
+      .nav-item a {
+        color: orange;
+        text-decoration: none;
+        font-size: 16px;
+        transition: 0.4s;
+        font-family: '宋体';
+      }
+      .nav-item a:hover {
+        font-size: 20px;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>css demo 练习</h1>
+    <ul class="nav">
+      <li class="nav-item">
+        <a href="./src/pictureStacking.html">图层叠加</a>
+      </li>
+      <li class="nav-item"><a href="./src/search.html">搜索框</a></li>
+      <li class="nav-item"><a href="./src/picture-wall.html">照片墙</a></li>
+      <li class="nav-item"><a href="">图层叠加</a></li>
+      <li class="nav-item"><a href="">图层叠加</a></li>
+      <li class="nav-item"><a href="">图层叠加</a></li>
+      <li class="nav-item"><a href="">图层叠加</a></li>
+      <li class="nav-item"><a href="">图层叠加</a></li>
+      <li class="nav-item"><a href="">图层叠加</a></li>
+      <li class="nav-item"><a href="">图层叠加</a></li>
+      <li class="nav-item"><a href="">图层叠加</a></li>
+      <li class="nav-item"><a href="">图层叠加</a></li>
+      <li class="nav-item"><a href="">图层叠加</a></li>
+    </ul>
+  </body>
+</html>
